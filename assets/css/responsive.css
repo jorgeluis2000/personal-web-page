@@ -1,0 +1,154 @@
+@media (min-width: 1400px) and (max-width: 1920px) {
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+}
+@media (max-width: 1600px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 1024px) {
+	.contenedor.profile-img {
+		overflow: hidden;
+		height: 400px;
+	  }
+	
+	  .contenedor.profile-img img {
+		position: relative;
+		height: 400px !important;
+	  }
+	
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	.contenedor.profile-img {
+		overflow: hidden;
+		height: 400px;
+	  }
+	
+	  .contenedor.profile-img img {
+		position: relative;
+		height: 400px !important;
+	  }
+    .contenedor-display-flex {
+      display: flex;
+      flex-flow: row wrap;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .isop-filter {
+    margin-top: 30px;
+  }
+  .contenedor.profile-img {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .contenedor.profile-img img {
+    position: relative;
+    height: 100% !important;
+  }
+
+  .contenedor-display-flex {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+@media (max-width: 767px) {
+  .contenedor.profile-img {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .contenedor.profile-img img {
+    position: relative;
+    height: 100% !important;
+  }
+  .exp-history .exp .media-left {
+    width: 100%;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  .navbar-collapse .isop-filter {
+    margin-top: 0px;
+  }
+  #cd-menu-trigger {
+    top: -100px;
+  }
+  .col-3 .portfolio-item {
+    width: 50%;
+  }
+  .exp-history .company-logo {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .exp-history .link-credential {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .inside-sec {
+    margin-top: 30px;
+  }
+  .isop-filter {
+    margin-top: 30px;
+  }
+  .ib-icon {
+    margin-top: 30px;
+  }
+  .about-me .personal-info li {
+    width: 100%;
+  }
+  .isop-filter li {
+    width: 50%;
+  }
+  .navbar-collapse .isop-filter li {
+    width: 100%;
+  }
+  .top-head {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+  .side-bar {
+    margin-top: 30px;
+  }
+  .collapse-item {
+    position: relative;
+    left: 20px;
+    padding: 5px;
+    width: 80%;
+  }
+  .collapse-header {
+    box-shadow: var(--box-shadown-2) !important;
+    border-radius: 5px;
+    background-color: var(--white);
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .contenedor-display-flex {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+@media (max-width: 640px) {
+}
+@media (max-width: 540px) {
+}
+@media (max-width: 440px) {
+  .about-me .personal-info li span {
+    width: 100%;
+    text-align: left;
+  }
+  .about-me .personal-info li p {
+    text-align: left;
+  }
+  .col-3 .portfolio-item {
+    width: 100%;
+  }
+  .side-bar .personal-info li span {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+}
+@media (max-height: 700px) {
+}

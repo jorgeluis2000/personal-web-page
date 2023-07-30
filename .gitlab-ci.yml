@@ -1,0 +1,23 @@
+stages:
+  - build
+
+job_build_latest:
+  variables:
+    NAME_SUBDOMAIN_REGISTER: "registry."
+    HOST_DOCKER_REGISTER: $NAME_SUBDOMAIN_REGISTER$CI_SERVER_HOST
+    PATH_DOMAIN_PROJECT: $HOST_DOCKER_REGISTER/$CI_PROJECT_NAMESPACE/$CI_PROJECT_NAME
+  stage: build
+  image: docker:19.03.12
+  services:
+    - docker:19.03.12-dind
+  before_script:
+    - echo "$CI_REGISTRY_PASSWORD"| docker login $HOST_DOCKER_REGISTER -u $CI_REGISTRY_USER --password-stdin
+  script:
+    - docker build -t $PATH_DOMAIN_PROJECT:$CI_COMMIT_TAG -t $PATH_DOMAIN_PROJECT:latest .
+    - docker push $PATH_DOMAIN_PROJECT:$CI_COMMIT_TAG
+    - docker push $PATH_DOMAIN_PROJECT:latest
+    - echo "Termino la subida de la imagen producion"
+  rules:
+    # - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+    #   when: never
+    - if: $CI_COMMIT_TAG

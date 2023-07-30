@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  myprofile:
+    container_name: myprofile
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3002:80

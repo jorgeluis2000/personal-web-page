@@ -1,0 +1,47 @@
+@import url(root-style.css);
+@import url(style-scroll.css);
+
+
+.center {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.center-all {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+}
+
+
+.noFound {
+  font-weight: 600;
+  font-size: 18px;
+  background-color: var(--primary-color);
+  color: var(--white-gray);
+  padding: 30px;
+  margin: 10px;
+  border-radius: 50px;
+  box-shadow: var(--box-shadown-2);
+}
+
+.noFound img {
+  border-radius: 15px;
+  box-shadow: var(--box-shadown-2);
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 500px) {
+  .noFound {
+    padding: 15px;
+  }
+  .noFound img {
+    height: 150px;
+  }
+}
